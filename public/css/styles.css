@@ -5723,7 +5723,8 @@ body div#main_container div#hitraffic_logo_section {
     font-family: 'Helvetica Neue'; }
 body div#main_container div#link_box_section {
   background-color: #000000;
-  border-top: 2px solid #b1b1b1; }
+  border-top: 2px solid #b1b1b1;
+  box-shadow: -5px -5px 100px #4A9BE9; }
   body div#main_container div#link_box_section div.link_boxes {
     border: 1px solid #b1b1b1;
     border-radius: 7px;
@@ -5750,7 +5751,8 @@ body div#main_container div#link_box_section {
 body div#main_container div#info_section {
   text-align: center;
   background-color: #000000;
-  border-top: 2px solid #b1b1b1; }
+  border-top: 1px solid #b1b1b1;
+  border-bottom: 1px solid #b1b1b1; }
   body div#main_container div#info_section p {
     font-family: 'Helvetica Neue';
     font-size: 18px;
@@ -5761,9 +5763,18 @@ body div#main_container div#info_section {
     max-width: 800px;
     padding: 0; }
   body div#main_container div#info_section h1 {
-    padding: 30px 50px 100px;
+    padding: 30px 50px 50px;
     font-family: 'Helvetica Neue';
     color: #FFFFFF;
     font-size: 54px;
     line-height: 60px;
     letter-spacing: -0.15px; }
+body footer {
+  text-align: center;
+  background-color: #000000;
+  line-height: 90px; }
+  body footer div#footer {
+    font-size: 11px;
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue';
+    display: block; }
