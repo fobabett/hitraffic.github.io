@@ -47,10 +47,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+// clearfix
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 body {
   div#header_section {
-    background-color: black;
+    background-color: #4FA3EB;
     ul#nav_bar {
       text-align: center;
       li.nav_item {
@@ -64,21 +71,75 @@ body {
   }
   div#main_container {
     div#hitraffic_logo_section {
-      // border-bottom: 2px solid black;
+      background-color: #020F1F;
       padding-bottom: 100px;
       padding-top: 100px;
       h1 {
+        color: #4FA3EB;
         font-size: 72px;
         text-align: center;
-        // font-family: Gotham Narrow; 
+        font-family: 'Helvetica Neue'; 
       }
       h2 {
+        color: #FFFFFF;
         text-align: center;
         font-size: 18px;
+        font-family: 'Helvetica Neue'; 
       }
     }
     div#link_box_section {
-      border-top: 2px solid black;
+      background-color: #000000;
+      border-top: 2px solid #b1b1b1;;
+      div.link_boxes {
+        border: 1px solid #b1b1b1;;
+        border-radius: 7px;
+        padding: 20px 10px 10px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        min-height: 90px;
+        text-align: center;
+        width: 30%;
+        display: block;
+        transition: all 0.3s ease-in-out;
+        transition-delay: initial;
+        h1 {
+        color: #505050;
+        transition: all 0.3s ease-in-out;
+        transition-delay: initial;
+        }
+        &:hover {
+        border: 1px solid #FFFFFF;
+        box-shadow:  0 0 10px #4A9BE9;
+        h1 {
+          color: #FFFFFF;
+        }
+        }
+      }
+    }
+    div#info_section {
+      text-align: center;
+      p {
+        font-family: 'Helvetica Neue'; 
+        font-size: 18px;
+        margin: 30px auto;
+        line-height: 1.25;
+        vertical-align: top;
+        color: #b1b1b1;
+        max-width: 800px;
+        padding: 0;
+      }
+      h1 {
+        padding: 30px 50px 100px;
+        font-family: 'Helvetica Neue'; 
+        color: #FFFFFF;
+        font-size: 54px;
+        line-height: 60px;
+        letter-spacing: -0.15px;
+      }
+      background-color: #000000;
+      border-top: 2px solid #b1b1b1;
     }
   }
 }
