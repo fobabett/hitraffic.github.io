@@ -1,5 +1,6 @@
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation";
+@import url("http://fonts.googleapis.com/css?family=Archivo+Narrow");
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
@@ -56,8 +57,12 @@ table {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  left: 0px;
   div#header_section {
-    background-color: #4FA3EB;
+    background-color: #000000;
     ul#nav_bar {
       text-align: center;
       li.nav_item {
@@ -70,13 +75,26 @@ body {
     }
   }
   div#main_container {
+    vertical-align: middle;
+    width: 100%;
     div#hitraffic_logo_section {
-      background-color: #020F1F;
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        z-index: -10;
+        position: aboslute;
+      }
+      background-color: #000000;
       padding-bottom: 100px;
       padding-top: 100px;
       h1 {
+        letter-spacing: -10px;
+        span#hi {
+          color: red;
+        }
         color: #4FA3EB;
-        font-size: 72px;
+        font-size: 76px;
         text-align: center;
         font-family: 'Helvetica Neue'; 
       }
@@ -89,7 +107,7 @@ body {
     }
     div#link_box_section {
       background-color: #000000;
-      border-top: 2px solid #b1b1b1;
+      border-top: 1px solid #b1b1b1;
       box-shadow:  -5px -5px 100px #4A9BE9;
       div.link_boxes {
         border: 1px solid #b1b1b1;;
@@ -106,17 +124,26 @@ body {
         transition: all 0.3s ease-in-out;
         transition-delay: initial;
         h1 {
+        font-family: 'Helvetica Neue'; 
         color: #505050;
         transition: all 0.3s ease-in-out;
         transition-delay: initial;
+        font-size: 26px;
         }
         &:hover {
         border: 1px solid #FFFFFF;
         box-shadow:  0 0 10px #4A9BE9;
         h1 {
+          display: block;
           color: #FFFFFF;
         }
         }
+      }
+      div#idk {
+        margin-top: -70px;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-family: 'Helvetica Neue'; 
       }
     }
     div#info_section {
@@ -135,7 +162,7 @@ body {
         padding: 30px 50px 50px;
         font-family: 'Helvetica Neue'; 
         color: #FFFFFF;
-        font-size: 54px;
+        font-size: 36px;
         line-height: 60px;
         letter-spacing: -0.15px;
       }
@@ -148,7 +175,7 @@ body {
     div#footer {
       // padding: 100px;
       font-size: 11px;
-      color: #FFFFFF;
+      color: #b1b1b1;
       font-family: 'Helvetica Neue'; 
       display: block;
     }
